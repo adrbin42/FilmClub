@@ -36,21 +36,91 @@ of the window's height. For responsiveness they are going to be the new units.
   background: transparent;
 }
 
-@import url("https://fonts.google.com/specimen/PT+Sans");
-
 body {
   font-family: 'PT Sans';
   color: #0B1942;
 }
 
-@media (min-width:769px) {
+@media screen and (min-width:769px) {
+
+  .site_nav {
+    background-color: #7DDFE8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: .9rem;
+    margin-top: 0px;
+  }
+
+  .site_nav img {
+    height: 11vh;
+    width: 8vw;
+    background-color: #F5005B;
+    margin-left: 0px;
+    padding: .5rem;
+  }
+
+  .site_nav a {
+    color: #fff;
+    margin: 0px;
+    text-decoration: none;
+    height: 11vh;
+    width: 8vw;
+    padding: .8rem .25rem;
+  }
+
+  .homelink {
+    background-color: #00A5BF;
+    background-size: cover;
+  }
+
+  .callink {
+    background-color: #00B7D3;
+  }
+
+  .joinlink {
+    background-color: #00D5E7;
+  }
+
+  #top_page_title {
+    margin: 1.5rem 1rem;
+    font-size: 30px;
+  }
+
+  .top_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+  }
+
+  .sectiontitle {
+    font-size: 25px;
+    background-color: #0B1942;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #site_footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #7DDFE8;
+    color: #fff;
+  }
+
+  #copyright {
+    padding-right: 20px;
+  }
 
 }
-
 @media only screen and (min-width:545px) and (max-width:768px) {
 
 }
 
-@media (max-width:544px) {
+@media screen and (max-width:544px) {
 
 }
+
+@import url("https://fonts.google.com/specimen/PT+Sans");
